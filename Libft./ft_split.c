@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbertoui <rbertoui@student.s19.be>         +#+  +:+       +#+        */
+/*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/14 16:12:09 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/19 19:55:44 by rbertoui         ###   ########.fr       */
+/*   Created: 2020/11/20 17:45:04 by rbertoui          #+#    #+#             */
+/*   Updated: 2020/11/20 17:45:17 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int		ft_nbmots(const char *s1, char c)
+static int		ft_nbmots(const char *s1, char c)
 {
 	int i;
 	int cnt;
@@ -32,7 +31,7 @@ int		ft_nbmots(const char *s1, char c)
 	return (cnt);
 }
 
-int		ft_nblettres(const char *s1, char c, unsigned int i)
+static int		ft_nblettres(const char *s1, char c, unsigned int i)
 {
 	int lettres;
 
@@ -45,7 +44,7 @@ int		ft_nblettres(const char *s1, char c, unsigned int i)
 	return (lettres);
 }
 
-char	*ft_copymots(const char *s1, char *mots, char c, unsigned int *i)
+static char	*ft_copymots(const char *s1, char *mots, char c, unsigned int *i)
 {
 	unsigned int j;
 
@@ -60,7 +59,7 @@ char	*ft_copymots(const char *s1, char *mots, char c, unsigned int *i)
 	return (mots);
 }
 
-char	**ft_freemots(char **s1, int j)
+static char	**ft_freemots(char **s1, int j)
 {
 	while (j >= 0)
 	{

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbertoui <rbertoui@student.s19.be>         +#+  +:+       +#+        */
+/*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/12 18:28:40 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/19 19:38:13 by rbertoui         ###   ########.fr       */
+/*   Created: 2020/11/20 17:49:10 by rbertoui          #+#    #+#             */
+/*   Updated: 2020/11/20 17:49:15 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isincharset(const char *set, const char c)
+static int		ft_isincharset(const char *set, const char c)
 {
 	int i;
 
@@ -26,7 +26,7 @@ int		ft_isincharset(const char *set, const char c)
 	return (0);
 }
 
-int		ft_start(const char *set, const char *s1)
+static int		ft_start(const char *set, const char *s1)
 {
 	int i;
 
@@ -36,7 +36,7 @@ int		ft_start(const char *set, const char *s1)
 	return (i);
 }
 
-int		ft_end(const char *set, const char *s1)
+static int		ft_end(const char *set, const char *s1)
 {
 	int i;
 
