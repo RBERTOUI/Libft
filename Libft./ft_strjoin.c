@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:45:52 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 19:33:30 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 20:02:21 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int 	i;
-	int 	j;
+	int		i;
+	int		j;
 	char	*s3;
 
 	i = 0;
