@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:39:49 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 19:24:39 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:40:54 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char			*ft_putnchar(long int nb, char *tab, int len)
 
 char			*ft_itoa(int n)
 {
-	unsigned	int nb;
+	unsigned int 	nb;
 	int 			len;
 	char			*tab;
 
