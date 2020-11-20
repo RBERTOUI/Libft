@@ -6,15 +6,15 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:38:27 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:38:27 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:20:03 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') 
+	if ((c >= 'a' && c <= 'z')
 	|| (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);

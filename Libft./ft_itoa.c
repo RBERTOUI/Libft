@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:39:49 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:40:04 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:24:39 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,11 @@ char			*ft_putnchar(long int nb, char *tab, int len)
 	return (tab);
 }
 
-
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	unsigned	int nb;
-	int len;
-	char	*tab;
+	int 			len;
+	char			*tab;
 
 	len = 0;
 	nb = n;
@@ -53,7 +52,7 @@ char	*ft_itoa(int n)
 		len += 1;
 	}
 	len += ft_len(nb);
-	if (!(tab =(char*)malloc((len + 1) * sizeof(char))))
+	if (!(tab = (char*)malloc((len + 1) * sizeof(char))))
 		return (NULL);
 	if (n == 0)
 		tab[0] = '0';

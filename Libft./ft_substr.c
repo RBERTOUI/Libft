@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:49:48 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:49:53 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:19:54 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *s1;
-	size_t i;
+	char	*s1;
+	size_t	i;
 
 	i = 0;
 	if (!s)
 		return (NULL);
 	if (!(s1 = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	if(ft_strlen(s) > start)
+	if (ft_strlen(s) > start)
 	{
 		while (i < len && s[start] != '\0')
 		{

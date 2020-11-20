@@ -6,13 +6,13 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:47:57 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:48:02 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 18:33:25 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2 , size_t len)
+char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
 	unsigned int i;
 	unsigned int j;

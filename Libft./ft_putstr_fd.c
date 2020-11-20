@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:43:44 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:43:49 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 18:34:10 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	if (!s)
 		return ;
-	while(s[i])
+	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;

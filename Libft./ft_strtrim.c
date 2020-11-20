@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:49:10 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:49:15 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:19:48 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int		ft_isincharset(const char *set, const char c)
 	int i;
 
 	i = 0;
-	while(set[i])
+	while (set[i])
 	{
 		if (set[i] == c)
 			return (1);
@@ -31,7 +31,7 @@ static int		ft_start(const char *set, const char *s1)
 	int i;
 
 	i = 0;
-	while(s1[i] && ft_isincharset(set, s1[i]))
+	while (s1[i] && ft_isincharset(set, s1[i]))
 		i++;
 	return (i);
 }
@@ -47,12 +47,12 @@ static int		ft_end(const char *set, const char *s1)
 	return (i);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char			*ft_strtrim(char const *s1, char const *set)
 {
-	int i;
-	int j;
-	char *s2;
-	int end;
+	int		i;
+	int		j;
+	char	*s2;
+	int		end;
 
 	j = 0;
 	if (!s1 || !set)
@@ -61,7 +61,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_end(set, s1);
 	if (end == 0)
 		end = ft_start(set, s1);
-	if (!(s2 = (char*)malloc(sizeof (char) * (end - ft_start(set, s1)) + 1)))
+	if (!(s2 = (char*)malloc(sizeof(char) * (end - ft_start(set, s1)) + 1)))
 		return (NULL);
 	while (i < end)
 	{

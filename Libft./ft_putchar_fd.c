@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:43:01 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:43:07 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:20:05 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write (fd, &c, 1);
+	write(fd, &c, 1);
 }

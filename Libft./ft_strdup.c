@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:45:41 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:45:44 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:19:43 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 char	*ft_strdup(const char *s)
 {
-	int i;
-    char *str;
+	int		i;
+	char	*str;
 
-    i = 0;
-    if (!(str = (char*)malloc(sizeof(char) * (ft_strlen(s) + 1))))
-        return (NULL);
-    while (s[i])
-    {
-        str[i] = s[i];
-        i++;
-    }
-    str[i] = '\0';
-    return (str);
+	i = 0;
+	if (!(str = (char*)malloc(sizeof(char) * (ft_strlen(s) + 1))))
+		return (NULL);
+	while (s[i])
+	{
+		str[i] = s[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }

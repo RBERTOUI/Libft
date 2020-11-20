@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:41:07 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:41:20 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 18:37:20 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		{
 			str1++;
 			str2++;
-		}		
+		}
 	}
 	return (0);
 }

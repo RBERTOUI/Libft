@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:47:27 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 17:47:32 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:21:02 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i;
+	int		i;
 	char	*str;
 
 	i = 0;
