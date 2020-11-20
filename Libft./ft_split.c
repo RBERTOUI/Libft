@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:45:04 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 19:39:00 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:42:59 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static int		ft_nblettres(const char *s1, char c, unsigned int i)
 	return (lettres);
 }
 
-static char		*ft_copymots(const char *s1, char *mots, char c, unsigned int *i)
+static char		*ft_cmots(const char *s1, char *mots, char c, unsigned int *i)
 {
 	unsigned int j;
 
@@ -91,7 +91,7 @@ char			**ft_split(const char *s1, const char c)
 		if (!(s2[j] = (char*)malloc(sizeof(char) *
 		(ft_nblettres(s1, c, i) + 1))))
 			return (ft_freemots(s2, j));
-		ft_copymots(s1, s2[j], c, &i);
+		ft_cmots(s1, s2[j], c, &i);
 		j++;
 	}
 	s2[j] = NULL;
