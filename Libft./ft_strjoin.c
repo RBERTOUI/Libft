@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:45:52 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 18:44:40 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:33:30 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	(ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (NULL);
 	while (s1[i])
-	{
-		s3[j] = s1[i];
-		i++;
-		j++;
-	}
+		s3[j++] = s1[i++];
 	i = 0;
 	while (s2[i])
-	{
-		s3[j] = s2[i];
-		j++;
-		i++;
-	}
+		s3[j++] = s2[i++];
 	s3[j] = '\0';
 	return (s3);
 }

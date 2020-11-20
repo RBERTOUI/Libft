@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:48:14 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 19:20:15 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:36:12 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int	count;
-	
+
 	count = 0;
 	while (s[count])
 		count++;

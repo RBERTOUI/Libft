@@ -6,7 +6,7 @@
 /*   By: rbertoui <rbertoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 17:45:04 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/11/20 19:19:46 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/11/20 19:39:00 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ static char		**ft_freemots(char **s1, int j)
 	return (NULL);
 }
 
-char	**ft_split(const char *s1, const char c)
+char			**ft_split(const char *s1, const char c)
 {
 	unsigned int	i;
 	unsigned int	j;
